@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBQ Party 2025 - Let's Grill & Chill!</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    .header {
+      background: url('bbq.webp') no-repeat center center/cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    }
+    .header h1, .header p {
+      position: relative;
+      z-index: 1;
+    }
+    .header h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .meme-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .countdown {
+      background: #ff6f61;
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .countdown h2 {
+      font-size: 3rem;
+    }
+    .footer {
+      background: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    /* Floating Image Section */
+    .floating-container {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      background: #f0f0f0; /* Optional: Add a background color for visibility */
+    }
+    .floating-image1 {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      animation: floatAround1 10s infinite linear;
+    }
+    .floating-image2 {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      animation: floatAround2 10s infinite linear;
+    }
+    .floating-image3 {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      animation: floatAround3 10s infinite linear;
+    }
+    
+    @keyframes floatAround1 {
+      100% { transform: translate(0, 0); }
+      75% { transform: translate(calc(100vw - 150px), 100px); }
+      50% { transform: translate(calc(100vw - 150px), calc(500px - 150px)); }
+      25% { transform: translate(0, calc(500px - 150px)); }
+      0% { transform: translate(0, 0); }
+    }
+    @keyframes floatAround2 {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(calc(100vw - 150px), 100px); }
+      25% { transform: translate(calc(100vw - 150px), calc(500px - 150px)); }
+      100% { transform: translate(0, calc(500px - 150px)); }
+      75% { transform: translate(0, 0); }
+    }
+    @keyframes floatAround3 {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(calc(100vw - 150px), 100px); }
+      50% { transform: translate(calc(100vw - 150px), calc(500px - 150px)); }
+      75% { transform: translate(0, calc(500px - 150px)); }
+      100% { transform: translate(0, 0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section as Image Holder -->
+  <div class="header">
+    <h1>অস্থির বার বি কিউ ২০২৫!!!</h1>
+    <p class="lead">Grill, Chill, and Meme Your Way Through the Night!</p>
+  </div>
+
+  <!-- Meme Section -->
+  <div class="container meme-section text-center my-5">
+    <h2>কেন আসবেন?</h2>
+    <div class="row d-flex align-items-center">
+      <div class="col-md-4">
+        <img src="chef.jpg" alt="Meme 1" class="img-fluid">
+        <p>আমাদের শেফ 👨‍🍳</p>
+      </div>
+      <div class="col-md-4">
+        <img src="ghost.jpg" alt="Meme 2" class="img-fluid">
+        <p>থাকছে ভুতের গল্প 👻</p>
+      </div>
+      <div class="col-md-4">
+        <img src="food.webp" class="img-fluid">
+        <p>সুস্বাদু খাবার 😋</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Image Section -->
+  <div class="floating-container">
+    <h1>শ্রদ্ধাভরে স্মরণ করছি</h1>
+    <img src="vangavandhu.png" alt="Floating Image" class="floating-image1">
+    <img src="vangavandhu.png" alt="Floating Image" class="floating-image2">
+    <img src="vangavandhu.png" alt="Floating Image" class="floating-image3">
+  </div>
+
+  <!-- Countdown Section -->
+  <div class="countdown">
+    <h2>Countdown to the Sizzle!</h2>
+    <div id="countdown-timer" class="display-4"></div>
+  </div>
+
+  <!-- Details Section -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>📅 তারিখঃ অদ্য ২৪ ফেব্রুয়ারি, ২০২৫ ইংরেজি বর্ষ</h3>
+      </div>
+      <div class="col-md-6">
+        <h3>📍 স্থানঃ ৬ নং হাজারী লেন, আন্দরকিল্লা, তত্তগ্রাম</h3>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="falseurl.html" class="falsebtn btn btn-primary btn-lg">Location link</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2025 BBQ Party. All rights reserved. | Made with ❤️ and 🍖</p>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Countdown Timer Script -->
+  <script>
+    // Set the date we're counting down to
+    const countDownDate = new Date("Feb 24, 2025 19:00:00").getTime();
+
+    // Update the countdown every 1 second
+    const x = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes, and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result
+      document.getElementById("countdown-timer").innerHTML = `
+        ${days}d ${hours}h ${minutes}m ${seconds}s
+      `;
+
+      // If the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown-timer").innerHTML = "LET'S GRILL!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
